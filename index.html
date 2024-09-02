@@ -3,19 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Expenze is your go-to daily expense tracking website designed to simplify your financial management. With our intuitive platform, you can effortlessly record your daily expenses, monitor your total income, and calculate your overall balance."/>
-    <meta name="keywords" content="expense tracker, financial management, HTML, CSS, JavaScript, local storage, Chitkara University">
+    <meta
+      name="description"
+      content="Expenze is your go-to daily expense tracking website designed to simplify your financial management. With our intuitive platform, you can effortlessly record your daily expenses, monitor your total income, and calculate your overall balance."
+    />
+    <meta
+      name="keywords"
+      content="expense tracker, financial management, HTML, CSS, JavaScript, local storage, Chitkara University"
+    />
     <title>Expenze - Money Tracker</title>
-    <link rel="icon" type="image/png" href="./Images/favicon.svg">
-    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="icon" type="image/png" href="./Images/favicon.svg" />
+    <link rel="stylesheet" href="Styles/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="container">
-      <h1>Welcome to Expense Tracker</h1>
-      <div class="auth-buttons">
-        <button onclick="location.href='login.html'">Login</button>
-        <button onclick="">Sign up</button>
-      </div>
+    <!-- Navbar section -->
+    <header class="header sticky">
+      <a href="#home">
+        <img src="./Images/logo.svg" alt="logo" class="logo"
+      /></a>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="li-all"><a class="navbar-link" href="#home">Home</a></li>
+          <li class="li-all"><a class="navbar-link" href="#about">About</a></li>
+          <li class="li-all">
+            <a class="navbar-link" href="#services">Pricing</a>
+          </li>
+          <li class="li-all">
+            <a class="navbar-link" href="#spots">Feedback</a>
+          </li>
+          <button onclick="window.open('login.html', '_blank')" class="btn">Try Now</button>
+        </ul>
+      </nav>
+
+      <div class="mobile-navbar-btn">
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
     </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section-hero" id="home">
+      <!-- leftside code -->
+      <div class="hero-leftside">
+        <h1>Track your Expenses to Save Money</h1>
+        <p>
+          Track your income and categorize your expenses. Create a budget to allocate funds and review it regularly to stay on top of your finances.
+        </p>
+        <div class="button-group">
+            <img
+              src="Images/google-play.png"
+              alt="Playstore"
+              class="playstore"
+            />
+            <img src="images/app-store.png" alt="applestore" class="appstore" />
+        </div>
+      </div>
+      <!-- rightside code -->
+      <div class="hero-rightside">
+        <img src="Images/lady_working.svg" alt="heroimg" />
+      </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="Scripts/index.js"></script>
   </body>
+
 </html>
