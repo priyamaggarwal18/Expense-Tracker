@@ -166,8 +166,9 @@ body {
 }
 
 .image-section img {
-  width: 75vw;
-  height: 75vh;
+  margin-top: 50px;
+  width: 80vw;
+  height: 80vh;
   border-radius: 40px;
 }
 
