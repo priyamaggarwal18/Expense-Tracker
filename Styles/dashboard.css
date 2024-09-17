@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+  background-color: #fff4f0;
+}
+
+:root {
+  --main: #ec5e2c;
+}
+
+::selection {
+  background-color: var(--main);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: var(--main);
+  color: white;
+}
+
+.dashboard-container {
+  background-color: #feebe5;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo {
+  height: 55px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-pic {
+  height: 55px;
+  border-radius: 50%;
+}
+.profile-pic:hover {
+  cursor: pointer;
+}
+#logout-button {
+  padding: 5px 10px;
+  font-size: 20px;
+  background: transparent;
+  color: var(--main);
+  border: 2px solid var(--main);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#logout-button:hover {
+  background-color: var(--main);
+  color: white;
+}
+
+.dashboard-content {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+#warning{
+    color: red;
+    text-align: center;
+}
+.balance-section {
+  grid-column: 1/2;
+  padding: 20px;
+  grid-row: 1/1;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.balance-section h3,
+.income-expense-section h3 {
+  font-size: 50px;
+  opacity: 0.6;
+}
+
+.balance-section p,
+.income-expense-section p {
+  font-size: 40px;
+  color: var(--main);
+}
+
+.income-expense-section {
+  grid-column: 1/2;
+  grid-row: 2/2;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.income,
+.expense {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section */
+.transaction-form {
+  grid-row: 1 / span 2;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#transaction-form input,
+#transaction-form button,
+#transaction-form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#transaction-form select {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#transaction-form button {
+  background-color: var(--main);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#transaction-form button:hover {
+  opacity: 0.6;
+}
+
+#clear-history {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#clear-history:hover,
+#download-history:hover {
+  background-color: #e04343;
+}
+
+.history-section {
+  grid-auto-rows: 100%;
+  grid-column: 1 / -1;
+  height: 100%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+#history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 1em;
+  text-align: left;
+}
+
+#history-table thead th {
+  background-color: var(--main);
+  color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#history-table tbody td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+@media (max-width: 900px) {
+  .dashboard-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .income-expense-section {
+    flex-direction: column;
+  }
+}

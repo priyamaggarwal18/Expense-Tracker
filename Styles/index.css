@@ -27,7 +27,7 @@ body {
 /*----------NAVBAR-----------*/
 .header {
   padding: 2rem 7rem;
-  height: 7rem;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,7 +103,7 @@ body {
   display: none;
 }
 
-/*----------HERO SECTION-----------*/
+/*----------hero section-----------*/
 .section-hero {
   padding: 0rem 8rem;
   padding-top: 5rem;
@@ -151,13 +151,27 @@ body {
   width: 600px;
   height: 600px;
 }
-/* ===========================================
-Responsive Codes 
-======================================= */
 
-/* 980px  */
-/* 1em=16px */
-/* 1rem=10px */
+/*---------Image section--------------*/
+.image-section {
+  display: flex;
+  padding: 5%;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../Images/background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-section img {
+  width: 75vw;
+  height: 75vh;
+  border-radius: 40px;
+}
+
+/*----------Responsive part-----------*/
 @media (max-width: 62em) {
   .mobile-navbar-btn {
     display: block;
@@ -184,11 +198,8 @@ Responsive Codes
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* to get the tranisition  */
     transform: translateX(100%);
     transition: all 0.5s linear;
-
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -258,6 +269,7 @@ Responsive Codes
     visibility: visible;
   }
 }
+
 /* Responsive for tablets */
 @media (max-width: 980px) {
   .section-hero {

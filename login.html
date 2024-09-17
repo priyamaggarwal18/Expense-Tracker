@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="icon" type="image/png" href="./Images/favicon.svg" />
     <link rel="stylesheet" href="Styles/login.css" />
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Login Form -->
     <div class="Login">
-        <img src="./Images/logo.svg" alt="logo" class="logo">
-        <h1>Login</h1>
-        <form id="login-form">
-            <input type="text" id="login-username" placeholder="Username" required><br>
-            <div class="password-container">
-                <input type="password" id="login-password" placeholder="Password" required>
-                <img src="./Images/eye-open.png" alt="toggle password" id="toggle-login-password" class="toggle-password">
-            </div>
-            <button type="submit">Login</button>
-        </form>
+      <img src="./Images/logo.svg" alt="logo" class="logo" />
+      <h1>Login</h1>
+      <form id="login-form">
+        <input type="text" id="login-username" placeholder="Username" required /><br />
+        <div class="password-container">
+          <input type="password" id="login-password" placeholder="Password" required />
+          <img src="./Images/eye-open.png" alt="toggle password" id="toggle-login-password" class="toggle-password" />
+        </div>
         <p id="login-error" class="error"></p>
-        <p><a href="#" id="switch-to-signup">Don't have an account? Sign Up</a></p>
+        <button type="submit">Login</button>
+      </form>
+      
+      <p><a href="#" id="switch-to-signup">Don't have an account? Sign Up</a></p>
     </div>
-
+    <!-- Signup Form -->
     <div class="Signup">
-        <img src="./Images/logo.svg" alt="logo" class="logo">
-        <h1>Sign Up</h1>
-        <form id="signup-form">
-            <input type="text" id="signup-username" placeholder="Username" required><br>
-            <input type="email" id="signup-email" placeholder="Email" required><br>
-            <div class="password-container">
-                <input type="password" id="signup-password" placeholder="Password" required>
-                <img src="./Images/eye-open.png" alt="toggle password" id="toggle-signup-password" class="toggle-password">
-            </div>
-            <div class="password-container">
-                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
-            </div>
-            <button type="submit">Sign Up</button>
-        </form>
+      <img src="./Images/logo.svg" alt="logo" class="logo" />
+      <h1>Sign Up</h1>
+      <form id="signup-form">
+        <input type="text" id="signup-username" placeholder="Username" required /><br />
+        <input type="email" id="signup-email" placeholder="Email" required /><br />
+        <div class="password-container">
+          <input type="password" id="signup-password" placeholder="Password" required />
+          <img src="./Images/eye-open.png" alt="toggle password" id="toggle-signup-password" class="toggle-password" />
+        </div>
+        <div class="password-container">
+          <input type="password" id="confirm-password" placeholder="Confirm Password" required />
+        </div>
         <p id="signup-error" class="error"></p>
-        <p><a href="#" id="switch-to-login">Already have an account? Login</a></p>
+        <button type="submit">Sign Up</button>
+      </form>
+      
+      <p><a href="#" id="switch-to-login">Already have an account? Login</a></p>
     </div>
 
     <script src="Scripts/login.js"></script>
-</body>
+  </body>
 </html>

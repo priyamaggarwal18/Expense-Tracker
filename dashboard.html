@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" type="image/png" href="./Images/favicon.svg" />
+    <link rel="stylesheet" href="Styles/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header Section -->
+        <header class="dashboard-header">
+            <div class="logo">
+                <img src="./Images/logo.svg" alt="logo" class="logo" />
+            </div>
+            <div class="profile-section">
+                <span id="welcome-user">Hi 👋, User</span>
+                <img src="./Images/profile.png" alt="Profile" class="profile-pic"  onclick="window.location.href='profile.html'">
+                <button id="logout-button">Logout</button>
+            </div>
+        </header>
+
+        <!-- Main Dashboard Content -->
+        <div class="dashboard-content">
+            <!-- Balance Section -->
+            <div class="balance-section">
+                <h3>Balance</h3>
+                <p>₹<span id="balance">0</span></p>
+            </div>
+
+            <!-- Income and Expense Section -->
+            <div class="income-expense-section">
+                <div class="income">
+                    <h3>Income</h3>
+                    <p>₹<span id="income">0</span></p>
+                </div>
+                <div class="expense">
+                    <h3>Expense</h3>
+                    <p>₹<span id="expense">0</span></p>
+                </div>
+            </div>
+
+            <!-- Form for Adding Transactions -->
+            <div class="transaction-form">
+                <h3>Add Transaction</h3>
+                <form id="transaction-form">
+                    <input type="number" id="amount" placeholder="Amount (+ for income, - for expense)" required>
+            
+                    <!-- Dropdown for categories -->
+                    <select id="category" required>
+                        <option value="" disabled selected>Select Category</option>
+                        <option value="food">Food</option>
+                        <option value="transport">Transport</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="bills">Bills</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="health">Health</option>
+                        <option value="education">Education</option>
+                        <option value="utilities">Utilities</option>
+                        <option value="travel">Travel</option>
+                        <option value="other">Other</option>
+                    </select>
+            
+                    <input type="text" id="reason" placeholder="Reason" required>
+                    <p id="warning"></p>
+                    <button type="submit">Add Transaction</button>
+                    <button id="clear-history">Clear All History</button>
+                </form>
+            </div>
+
+            <!-- History Section -->
+            <div class="history-section">
+                <h3>History</h3>
+                <table id="history-table">
+                    <thead>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Category</th>
+                            <th>Reason</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="history-table-body">
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="Scripts/dashboard.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</body>
+</html>
