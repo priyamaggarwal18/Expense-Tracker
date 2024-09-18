@@ -22,6 +22,7 @@
 - [Key Features](#key-features)
 - [Project Structure](#project-structure)
 - [Check Responsive](#check-responsive)
+- [Local Storage Schema](#local-storage-schema)
 - [Concepts Used](#concepts-used)
 - [Future Scope](#future-scope)
 
@@ -72,6 +73,30 @@ Expenze is designed with a mobile-first approach, ensuring a seamless experience
   <a href="https://ui.dev/amiresponsive?url=https://priyamaggarwal18.github.io/Expense-Tracker/" target="_blank">
     <img src="./Images/responsive.png" alt="Responsive design demonstration" />
   </a>
+</div>
+
+## Local Storage Schema
+
+The application uses local storage to manage user data and transactions. The schema is structured as follows:
+
+```bash
+Local Storage/
+├── currentUser                # Stores the username of the currently logged-in user as a string.
+├── users                      # An array of user objects.
+│   ├── username               # Unique username for the user (string).
+│   ├── password               # User's password (string).
+│   ├── transactions           # Array of transaction objects.
+│   │   ├── amount             # Transaction amount (number).
+│   │   ├── category           # Category of the transaction (string).
+│   │   ├── reason             # Reason for the transaction (string).
+│   │   ├── date               # Date and time of the transaction (string).
+│   ├── income                 # Total income for the user (number).
+│   ├── expense                # Total expenses for the user (number).
+```
+Below is a sample structure of the local storage:
+
+<div align="center">
+  <img src="./Images/local_storage.png" alt="Local Storage Schema Example" />
 </div>
 
 
