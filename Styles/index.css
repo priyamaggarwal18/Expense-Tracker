@@ -540,14 +540,14 @@ html {
   }
 
   .section-hero .hero-rightside img {
-    height: 40vh;
+    height: 35vh;
     width: auto;
     margin: 0;
     margin-top: 5rem;
   }
 
   .section-hero .hero-leftside h1 {
-    width: 70vw;
+    width: 65vw;
     font-size: 4rem;
     line-height: 4rem;
     margin-top: 10rem;
@@ -580,14 +580,14 @@ html {
   }
 
   .section-feature .feature-leftside img {
-    height: 40vh;
+    height: 35vh;
     width: auto;
     margin: 0;
     margin-top: 5rem;
   }
 
   .section-feature h2 {
-    width: 70vw;
+    width: 65vw;
     font-size: 4rem;
     line-height: 4rem;
     margin-top: 10rem;
