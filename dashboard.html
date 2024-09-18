@@ -11,12 +11,12 @@
     <div class="dashboard-container">
         <!-- Header Section -->
         <header class="dashboard-header">
-            <div class="logo">
+            <div class="logo" onclick="window.open('index.html', '_self');">
                 <img src="./Images/logo.svg" alt="logo" class="logo" />
             </div>
             <div class="profile-section">
                 <span id="welcome-user">Hi 👋, User</span>
-                <img src="./Images/profile.png" alt="Profile" class="profile-pic"  onclick="window.location.href='profile.html'">
+                <img src="./Images/profile.png" alt="Profile" class="profile-pic">
                 <button id="logout-button">Logout</button>
             </div>
         </header>
@@ -41,13 +41,11 @@
                 </div>
             </div>
 
-            <!-- Form for Adding Transactions -->
+            <!-- Form Section -->
             <div class="transaction-form">
                 <h3>Add Transaction</h3>
                 <form id="transaction-form">
                     <input type="number" id="amount" placeholder="Amount (+ for income, - for expense)" required>
-            
-                    <!-- Dropdown for categories -->
                     <select id="category" required>
                         <option value="" disabled selected>Select Category</option>
                         <option value="food">Food</option>
@@ -66,6 +64,7 @@
                     <p id="warning"></p>
                     <button type="submit">Add Transaction</button>
                     <button id="clear-history">Clear All History</button>
+                    <button id="download-history">Download History</button>
                 </form>
             </div>
 
@@ -79,9 +78,11 @@
                             <th>Category</th>
                             <th>Reason</th>
                             <th>Date</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody id="history-table-body">
+                        
                     </tbody>
                 </table>
             </div>
@@ -90,6 +91,5 @@
     </div>
 
     <script src="Scripts/dashboard.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 </body>
 </html>
