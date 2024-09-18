@@ -317,7 +317,8 @@ html {
     color: white;
   }
   .image-section{
-    height: 40vh;
+    width: 100vw;
+    height: auto;
   }
 
   .image-section img{
@@ -540,14 +541,14 @@ html {
   }
 
   .section-hero .hero-rightside img {
-    height: 30vh;
-    width: auto;
+    width: 70vw;
+    height: auto;
     margin: 0;
     margin-top: 5rem;
   }
 
   .section-hero .hero-leftside h1 {
-    width: 60vw;
+    width: 70%;
     font-size: 4rem;
     line-height: 4rem;
     margin-top: 10rem;
@@ -580,8 +581,8 @@ html {
   }
 
   .section-feature .feature-leftside img {
-    height: 30vh;
-    width: auto;
+    width: 70%;
+    height: auto;
     margin: 0;
     margin-top: 5rem;
   }
