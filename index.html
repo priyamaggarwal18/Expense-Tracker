@@ -14,7 +14,10 @@
     <title>Expenze - Money Tracker</title>
     <link rel="icon" type="image/png" href="./Images/favicon.svg" />
     <link rel="stylesheet" href="Styles/index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- Navbar section -->
@@ -25,14 +28,18 @@
       <nav class="navbar">
         <ul class="navbar-list">
           <li class="li-all"><a class="navbar-link" href="#home">Home</a></li>
-          <li class="li-all"><a class="navbar-link" href="#about">About</a></li>
           <li class="li-all">
-            <a class="navbar-link" href="#services">Pricing</a>
+            <a class="navbar-link" href="#feature">Features</a>
+          </li>
+          <li class="li-all">
+            <a class="navbar-link" href="#github">Github</a>
           </li>
           <li class="li-all">
             <a class="navbar-link" href="#spots">Feedback</a>
           </li>
-          <button onclick="window.open('login.html', '_blank')" class="btn">Try Now</button>
+          <button onclick="window.open('login.html', '_blank')" class="btn">
+            Try Now
+          </button>
         </ul>
       </nav>
 
@@ -46,7 +53,11 @@
     <section class="section-hero" id="home">
       <div class="hero-leftside">
         <h1>Track your Expenses to Save Money</h1>
-        <p>Track your income and categorize your expenses. Create a budget to allocate funds and review it regularly to stay on top of your finances.</p>
+        <p>
+          Track your income and categorize your expenses. Create a budget to
+          allocate funds and review it regularly to stay on top of your
+          finances.
+        </p>
         <div class="button-group">
           <img src="Images/google-play.png" alt="Playstore" class="playstore" />
           <img src="Images/app-store.png" alt="applestore" class="playstore" />
@@ -56,13 +67,106 @@
         <img src="Images/lady_working.svg" alt="heroimg" />
       </div>
     </section>
+
+    <!-- Image section -->
     <section class="image-section">
       <div class="image-container">
         <img src="./Images/ss.png" alt="logo" class="logo" />
       </div>
     </section>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Features section-->
+    <section class="section-feature" id="feature">
+      <div class="feature-leftside">
+        <img src="Images/use_anytime.svg" alt="heroimg" />
+      </div>
+      <div class="feature-rightside">
+        <h2>Features</h2>
+        <div class="features-container">
+          <ul class="features-list">
+            <li>Track Income and Expenses Easily</li>
+            <li>View Detailed Transaction History Anytime</li>
+            <li>Responsive Design for All Devices</li>
+            <li>Simple Login and Signup Process</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- github -->
+    <section class="section-hero" id="github">
+      <div class="hero-leftside">
+        <h1>Github</h1>
+        <br>
+        <div class="button-group">
+          <img
+            alt="GitHub repo size"
+            src="https://img.shields.io/github/repo-size/priyamaggarwal18/Lit-Version-Control-Simulation?style=for-the-badge&color=orange"
+          />
+          <img
+            alt="GitHub Repo stars"
+            src="https://img.shields.io/github/stars/priyamaggarwal18/Lit-Version-Control-Simulation?style=for-the-badge&color=orange"
+          />
+          <img
+            alt="GitHub forks"
+            src="https://img.shields.io/github/forks/priyamaggarwal18/Lit-Version-Control-Simulation?style=for-the-badge&color=orange"
+          />
+          <img
+            alt="Last commit"
+            src="https://img.shields.io/github/last-commit/priyamaggarwal18/Lit-Version-Control-Simulation?style=for-the-badge&color=orange"
+          />
+          <br>
+          <p>All the source code for our project is available for free on our GitHub repository, where anyone can explore, learn from, and contribute to my work without any cost.</p>
+          <button onclick="window.open('login.html', '_blank')" class="btn">
+            View Code
+          </button>
+          <div class="profile">
+            <img
+              src="https://contrib.rocks/image?repo=priyamaggarwal18/Game_Hub1"
+              alt="Contributions"
+            />
+            <div>
+              <h3>
+                Maintained By - Priyam Aggarwal
+              </h3>
+              <div>
+                <a
+                  href="https://priyamaggarwal18.github.io/Portfolio2.0/"
+                  target="_blank"
+                  style="text-decoration: none"
+                >
+                  <img
+                    src="https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=web&logoColor=white"
+                    alt="Portfolio"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/priyamaggarwal"
+                  target="_blank"
+                  style="text-decoration: none"
+                >
+                  <img
+                    src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"
+                    alt="LinkedIn"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-rightside">
+        <img src="Images/github.svg" alt="heroimg" />
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="Scripts/index.js"></script>
   </body>
 </html>

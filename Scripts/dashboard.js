@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const transactionSuccess = currentUser.addTransaction(amount, category, reason);
             if (transactionSuccess) {
                 this.reset();
+                warningMessage.textContent = "";
                 updateDashboard();
             } else {
                 warningMessage.textContent = "Transaction cannot be processed. Balance would go negative.";
