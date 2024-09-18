@@ -75,6 +75,10 @@ Expenze is designed with a mobile-first approach, ensuring a seamless experience
   </a>
 </div>
 
+[🔝](#table-of-contents)
+
+<br>
+
 ## Local Storage Schema
 
 The application uses local storage to manage user data and transactions. The schema is structured as follows:
@@ -99,6 +103,9 @@ Below is a sample structure of the local storage:
   <img src="./Images/local_storage.png" alt="Local Storage Schema Example" />
 </div>
 
+[🔝](#table-of-contents)
+
+<br>
 
 ## Concepts Used
 
