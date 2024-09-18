@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./Images/expenze.png" alt="Lit Version Control System" />
+  <img src="./Images/expenze.png" alt="banner" />
 </div>
 <div align="center">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/priyamaggarwal18/Expense-Tracker?style=for-the-badge&color=orange">
@@ -21,7 +21,7 @@
 
 - [Key Features](#key-features)
 - [Project Structure](#project-structure)
-- [Check Respoonsive](#check-responsive)
+- [Check Responsive](#check-responsive)
 - [Concepts Used](#concepts-used)
 - [Future Scope](#future-scope)
 
