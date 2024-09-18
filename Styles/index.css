@@ -228,8 +228,8 @@ html {
 }
 
 .features-list li::before {
-  content: '\2022'; /* Unicode for bullet */
-  font-size: 1.5em; /* Size of the bullet */
+  content: '\2022';
+  font-size: 1.5em;
   color: var(--main);
   left: 0;
   top: 0;
