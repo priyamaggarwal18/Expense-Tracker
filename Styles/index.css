@@ -141,7 +141,6 @@ html {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  z-index: 1;
 }
 .section-hero .hero-leftside {
   width: 60%;
@@ -241,12 +240,82 @@ html {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
+  align-content: center;
   gap: 10px;
 }
 
+.profile-logo{
+  width: 50px;
+  border-radius: 50%;
+}
+
+/*--------Feedback Form---------------*/
+.section-feedback{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-image: url("../Images/background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  padding: 5%;
+  gap: 10px;
+}
+
+.section-feedback h1{
+  width: 50rem;
+  font-size: 5rem;
+  margin-bottom: 20px;
+  line-height: 4.5rem;
+  word-spacing: 12px;
+  text-align: center;
+  color: white;
+}
+#message{
+  width: 80%;
+  padding-right: 40px;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: Inter;
+}
+.send {
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 5px;
+  width: 10rem;
+  transition: 0.6s;
+}
+
+.send:hover {
+  background: var(--main);
+  color: white;
+  transition: 0.6s;
+}
+#emailForm{
+  margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
 /*----------Responsive part-----------*/
-@media (max-width: 62em) {
+@media (max-width: 992px) {
+
+  .header .btn{
+    color: white;
+    border: 2px solid white;
+  }
   
+  .header .btn {
+    color: white;
+  }
   .image-section{
     height: 40vh;
   }
@@ -260,7 +329,6 @@ html {
   .mobile-navbar-btn {
     display: block;
     z-index: 999;
-    color: white;
   }
 
   .header {
@@ -291,18 +359,24 @@ html {
 
   .navbar-list {
     flex-direction: column;
-    color: white;
     font-size: 20px;
     align-items: center;
   }
   .navbar-link:link,
   .navbar-link:visited {
     font-size: 2.5rem;
+    color: white;
   }
 
   .header .logo {
     height: 6rem;
     width: 16rem;
+  }
+
+  .header{
+    justify-content: space-between;
+    padding: 0 10px;
+    margin:0;
   }
 
   .active .navbar {
@@ -320,27 +394,11 @@ html {
     display: none;
   }
 }
-
-/* Below 560px  */
-@media (max-width: 35em) {
-  .header {
-    padding: 0 2.4rem;
-  }
-
-  .header .logo {
-    width: 60%;
-  }
-  .navbar-list {
-    flex-direction: column;
-    color: white;
-    gap: 20px;
-    font-size: 20px;
-    align-items: center;
-  }
-}
-
 /* Responsive for laptop */
 @media (max-width: 1280px) {
+  .send,.btn{
+    font-size: 10px;
+  }
   .section-hero {
     padding: 2rem 11rem;
   }
@@ -348,23 +406,78 @@ html {
     font-size: 50%;
   }
   .section-hero .hero-rightside img {
-    height: 60rem;
+    height: 50rem;
     margin-top: 2rem;
-    visibility: visible;
+  }
+  .section-hero .hero-leftside {
+    width: 40vw;
+    margin-top: 2rem;
   }
 }
-
 /* Responsive for tablets */
 @media (max-width: 980px) {
+
+  .github p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .profile{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .profile h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+
+  .send{
+    font-size: 15px;
+    width: 40vw;
+    margin: 10px 0px;
+  }
+  #emailForm{
+    padding: auto;
+      text-align: center;
+      width: 100%;
+  }
+  .section-feedback h1{
+    padding-top: 30px;
+    width: 30rem;
+    font-size: 40px;
+  }
+  
+  #message{
+    width: 70vw;
+    height: auto;
+    font-size: 15px;
+  }
+
+  .btn{
+    font-size: 20px;
+    width: 200px
+  }
+
   .section-hero {
     padding: 2rem 6rem;
   }
+
   .section-hero .hero-rightside img {
-    height: 50rem;
-    margin: 0;
-    margin-left: -11rem;
+    height: 35vh;
+    width: auto;
     visibility: visible;
   }
+
   .section-hero .hero-leftside h1 {
     width: 35rem;
     font-size: 3.5rem;
@@ -376,40 +489,37 @@ html {
     font-size: 1.5rem;
   }
 
-  .header .btn {
-    font-size: 3rem;
+  .section-feature {
+    padding: 2rem 6rem;
+  }
+
+  .section-feature .feature-leftside img {
+    height: 35vh;
+    width: auto;
+    visibility: visible;
+  }
+
+  .section-feature h2 {
+    width: 35rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .section-feature .features-list {
+    width: 35rem;
+    font-size: 1.5rem;
   }
 }
 
-/* making responsive for mobile */
+.image-section{
+  width: 100vw;
+  height: auto;
+}
+
+/* Responsive for mobile */
 @media (max-width: 770px) {
-  .header .logo {
-    height: 8.5rem;
-    padding: 0;
-  }
 
-  .btn {
-    font-size: 25px;
-    background: transparent;
-    color: white;
-    border: 2px solid white;
-    cursor: pointer;
-    border-radius: 0.5rem;
-    padding: 5px;
-    width: 50vw;
-    transition: 0.6s;
-  }
 
-  .navbar-link:link,
-  .navbar-link:visited {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 3.5rem;
-    color: white;
-    transition: all 0.3s;
-  }
-
-  /* hero section */
   .section-hero {
     justify-content: center;
     width: 100%;
@@ -418,21 +528,24 @@ html {
     flex-flow: column;
     text-align: center;
   }
+
   .section-hero .hero-leftside {
     width: 100%;
     align-items: center;
   }
+
   .section-hero .hero-rightside {
     display: flex;
     justify-content: center;
-    position: relative;
   }
+
   .section-hero .hero-rightside img {
-    height: 35rem;
+    height: 40vh;
+    width: auto;
     margin: 0;
     margin-top: 5rem;
-    visibility: visible;
   }
+
   .section-hero .hero-leftside h1 {
     width: 70vw;
     font-size: 4rem;
@@ -440,7 +553,48 @@ html {
     margin-top: 10rem;
     text-align: center;
   }
+
   .section-hero .hero-leftside p {
+    width: 35rem;
+    font-size: 2rem;
+  }
+
+  .section-feature {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+  }
+
+  .section-feature .feature-leftside {
+    width: 100%;
+    align-items: center;
+  }
+
+  .section-feature .feature-rightside {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .section-feature .feature-leftside img {
+    height: 40vh;
+    width: auto;
+    margin: 0;
+    margin-top: 5rem;
+  }
+
+  .section-feature h2 {
+    width: 70vw;
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-top: 10rem;
+    text-align: center;
+  }
+
+  .section-feature .features-list {
     width: 35rem;
     font-size: 2rem;
   }

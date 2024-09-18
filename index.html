@@ -35,7 +35,7 @@
             <a class="navbar-link" href="#github">Github</a>
           </li>
           <li class="li-all">
-            <a class="navbar-link" href="#spots">Feedback</a>
+            <a class="navbar-link" href="#feedback">Feedback</a>
           </li>
           <button onclick="window.open('login.html', '_blank')" class="btn">
             Try Now
@@ -94,7 +94,7 @@
     </section>
     <!-- github -->
     <section class="section-hero" id="github">
-      <div class="hero-leftside">
+      <div class="hero-leftside github">
         <h1>Github</h1>
         <br>
         <div class="button-group">
@@ -115,16 +115,17 @@
             src="https://img.shields.io/github/last-commit/priyamaggarwal18/Lit-Version-Control-Simulation?style=for-the-badge&color=orange"
           />
           <br>
+          </div>
           <p>All the source code for our project is available for free on our GitHub repository, where anyone can explore, learn from, and contribute to my work without any cost.</p>
           <button onclick="window.open('login.html', '_blank')" class="btn">
             View Code
           </button>
           <div class="profile">
-            <img
-              src="https://contrib.rocks/image?repo=priyamaggarwal18/Game_Hub1"
+            <img class="profile-logo"
+              src="https://avatars.githubusercontent.com/u/122437027?v=4"
               alt="Contributions"
             />
-            <div>
+            <div class="profile-inner">
               <h3>
                 Maintained By - Priyam Aggarwal
               </h3>
@@ -158,6 +159,15 @@
         <img src="Images/github.svg" alt="heroimg" />
       </div>
     </section>
+
+    <!-- Feedback Section -->
+    <section class="section-feedback" id="feedback">
+    <h1>Feedback Form</h1>
+    <form id="emailForm">
+      <textarea id="message" name="message" rows="4" cols="50" placeholder="I value your input! Please type your feedback in the space provided below. This form will send your comments directly to me via email."></textarea><br><br>
+      <button class="send" type="button" onclick="sendEmail()">Send Message</button>
+    </form>
+  </section>
 
     <script
       type="module"

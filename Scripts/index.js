@@ -23,3 +23,9 @@ class Navigation {
   
   new Navigation();
   
+  function sendEmail() {
+    var message = document.getElementById('message').value;
+    var recipientEmail = 'priyamagggarwal@gmail.com';
+    var mailtoLink = 'mailto:' + recipientEmail + '?subject=Message&body=' + encodeURIComponent(message);
+    window.location.href = mailtoLink;
+}
