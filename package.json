@@ -2,8 +2,10 @@
   "name": "expense-tracker",
   "version": "1.0.0",
   "description": "<div align=\"center\">\r   <img src=\"./Images/expenze.png\" alt=\"banner\" />\r </div>\r <div align=\"center\">\r   <img alt=\"GitHub repo size\" src=\"https://img.shields.io/github/repo-size/priyamaggarwal18/Expense-Tracker?style=for-the-badge&color=orange\">\r   <img alt=\"GitHub Repo stars\" src=\"https://img.shields.io/github/stars/priyamaggarwal18/Expense-Tracker?style=for-the-badge&color=orange\">\r   <img alt=\"GitHub forks\" src=\"https://img.shields.io/github/forks/priyamaggarwal18/Expense-Tracker?style=for-the-badge&color=orange\">\r   <img alt=\"Last commit\" src=\"https://img.shields.io/github/last-commit/priyamaggarwal18/Expense-Tracker?style=for-the-badge&color=orange\">\r </div>",
-  "main": "server.js",
+  "main": "index.html",
+  "homepage": "https://priyamaggarwal18.github.io/Expense-Tracker",
   "scripts": {
+    "deploy": "gh-pages -d static",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
@@ -11,5 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
