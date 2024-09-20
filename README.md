@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./Images/expenze.png" alt="banner" />
+  <img src="./static/Images/expenze.png" alt="banner" />
 </div>
 <div align="center">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/priyamaggarwal18/Expense-Tracker?style=for-the-badge&color=orange">
@@ -21,6 +21,7 @@
 
 - [Key Features](#key-features)
 - [Project Structure](#project-structure)
+- [How To Use this Project](#how-to-use-this-project)
 - [Check Responsive](#check-responsive)
 - [Local Storage Schema](#local-storage-schema)
 - [Concepts Used](#concepts-used)
@@ -65,13 +66,61 @@ Expense-Tracker/
 
 <br>
 
+## How to Use This Project
+
+### Prerequisites:
+- Make sure you have [Node.js](https://nodejs.org/en/) installed.
+- A GitHub account to clone the repository.
+- (Optional) A text editor like [VS Code](https://code.visualstudio.com/).
+
+### Steps to Get Started:
+
+1. **Clone the Repository:**
+   Open your terminal and run the following command:
+   ```bash
+   git clone https://github.com/priyamaggarwal18/Expense-Tracker.git
+   ```
+   
+2. **Navigate to the Project Directory:**
+   Once the repository is cloned, navigate to the project folder
+   ```bash
+   cd Expense-Tracker
+   ```
+3. **Install Dependencies:**
+  The project uses some npm packages such as ```gh-pages``` and ```express```. Install them by running:
+   ```bash
+   npm install
+   ```
+4. **Run the Project:**
+   ```bash
+   npm start
+   ```
+   This will start the server locally on ```http://localhost:8080```.
+5. **Deploy to GitHub Pages (Optional):**
+   To deploy the project to GitHub Pages (if you've cloned the repository and made changes), you can run:
+   ```bash
+   npm run deploy
+   ```
+   This will deploy the ```static``` folder to the ```gh-pages``` branch, making the website live at your GitHub Pages URL.
+   
+6. **Deploy to GitHub Pages (Optional):**
+    To deploy the project to GitHub Pages (if you've cloned the repository and made changes), you can run:
+    ```bash
+    npm run deploy
+    ```
+    this will deploy the ```static``` folder to the ```gh-pages``` branch, making the website live at your ```GitHub Pages URL```.
+
+[🔝](#table-of-contents)
+
+   <br>
+
 ## Check Responsive
 
 Expenze is designed with a mobile-first approach, ensuring a seamless experience across all devices. Click the image below to view the app's responsive design in action.
 
 <div align="center">
   <a href="https://ui.dev/amiresponsive?url=https://priyamaggarwal18.github.io/Expense-Tracker/" target="_blank">
-    <img src="./Images/responsive.png" alt="Responsive design demonstration" />
+    <img src="./static/Images/responsive.png" alt="Responsive design demonstration" />
   </a>
 </div>
 
@@ -100,7 +149,7 @@ Local Storage/
 Below is a sample structure of the local storage:
 
 <div align="center">
-  <img src="./Images/local_storage.png" alt="Local Storage Schema Example" />
+  <img src="./static/Images/local_storage.png" alt="Local Storage Schema Example" />
 </div>
 
 [🔝](#table-of-contents)
