@@ -103,12 +103,6 @@ Expense-Tracker/
    ```
    This will deploy the ```static``` folder to the ```gh-pages``` branch, making the website live at your GitHub Pages URL.
    
-6. **Deploy to GitHub Pages (Optional):**
-    To deploy the project to GitHub Pages (if you've cloned the repository and made changes), you can run:
-    ```bash
-    npm run deploy
-    ```
-    this will deploy the ```static``` folder to the ```gh-pages``` branch, making the website live at your ```GitHub Pages URL```.
 
 [🔝](#table-of-contents)
 
