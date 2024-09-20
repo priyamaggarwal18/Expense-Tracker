@@ -48,19 +48,16 @@
 
 ```bash
 Expense-Tracker/
-├── Images/                   # Folder containing images for icons , backgrounds etc.
-├── Scripts/                  # JavaScript files
-│   ├── dashboard.js          # Core functionality (CRUD operations, transaction handling , print history)
-│   ├── login.js              # Login, signup, and user validation logic
-│   ├── index.js              # Scripts for the landing page
-├── Styles/                   # CSS files for styling
-│   ├── dashboard.css         # Styles for the dashboard
-│   ├── login.css             # Styles for login and signup pages
-│   ├── index.css             # Styles for the landing page
-├── index.html                # Landing page of the application (entry point)
-├── login.html                # Login and signup page
-├── dashboard.html            # Main application dashboard
-├── README.md                 # Project documentation
+├── static/
+│   ├── Images/               # Icons, backgrounds, and other images.
+│   ├── Scripts/              # JavaScript files for functionality.
+│   ├── Styles/               # CSS files for styling.
+│   ├── dashboard.html        # Dashboard page.
+│   ├── index.html            # Landing page (entry point).
+│   ├── login.html            # Login and signup page.
+├── package.json              # npm configuration and scripts.
+├── README.md                 # Project documentation.
+
 ```
 [🔝](#table-of-contents)
 
