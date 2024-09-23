@@ -57,6 +57,7 @@ Expense-Tracker/
 │   ├── login.html            # Login and signup page.
 ├── package.json              # npm configuration and scripts.
 ├── package-lock.json         # Automatically generated file that locks the dependencies.
+├── server.js                 # Common entry point for Node.js applications (to start own server)
 ├── README.md                 # Project documentation.
 
 ```
